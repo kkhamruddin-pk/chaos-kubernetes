@@ -43,7 +43,7 @@ kind: ReplicaSet
 metadata:
   name: greeter-rs
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: greeter-pod
