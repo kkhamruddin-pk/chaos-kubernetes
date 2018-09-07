@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: name
-        image: arungupta/name-service:latest
+        image: pkrl/prl-name-service:latest
         ports:
         - containerPort: 8080
 ---
@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
       - name: name
-        image: arungupta/greeter-service:latest
+        image: pkrl/prl-greeter-service:latest
         ports:
         - containerPort: 8080
 ---
@@ -87,7 +87,7 @@ spec:
     spec:
       containers:
       - name: webapp-pod
-        image: arungupta/webapp-service:latest
+        image: pkrl/prl-webapp-service:latest
         env:
         - name: NAME_SERVICE_HOST
           value: name-service
